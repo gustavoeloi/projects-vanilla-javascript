@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    />
+
     <link rel="stylesheet" href="./resources/css/styles.css" />
   </head>
   <body>
@@ -24,5 +29,37 @@
         </ul>
       </div>
     </nav>
+    <main>
+      <div class="content">
+        <h3>Informe seus dados</h3>
+        <form action="" class="form-imc">
+          <div>
+            <label for="weigth">Peso</label>
+            <input type="text" id="weigth" />
+          </div>
+
+          <div>
+            <label for="height">Altura (exemplo: 1.84m)</label>
+            <input type="text" id="height" />
+          </div>
+
+          <button type="submit" class="button">Verificar</button>
+        </form>
+      </div>
+      <div class="modal-overlay">
+        <div class="modal-container">
+          <h3>SEU IMC</h3>
+          <button class="close-btn">
+            <i class="fas fa-times"></i>
+          </button>
+          <p class="imc-text">
+            Resultado: <span class="imc-result">25.34</span>
+          </p>
+          <p class="">Classificação: <span class="imc-category"></span></p>
+        </div>
+      </div>
+    </main>
+
+    <script src="./resources/js/form.js"></script>
   </body>
 </html>
